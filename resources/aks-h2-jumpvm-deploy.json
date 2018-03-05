@@ -90,7 +90,7 @@
         },
         "storageProfile": {
           "imageReference": {
-            "id": "/subscriptions/b23accae-e655-44e6-a08d-85fb5f1bb854/resourceGroups/aks-labs-jumpbox-resources/providers/Microsoft.Compute/images/h2aksvm-image"
+            "id": "/subscriptions/', subscription().subscriptionId, '/resourceGroups/aks-labs-jumpbox-resources/providers/Microsoft.Compute/images/h2aksvm-image"
           },
           "osDisk": {
             "createOption": "fromImage",
@@ -108,7 +108,7 @@
         }
       },
       "dependsOn": [
-        "[concat('Microsoft.Network/networkInterfaces/', parameters('networkInterfaceName'))]",
+        "[concat('Microsoft.Network/networkInterfaces/', parameters('networkInterfaceName'))]"
       ]
     },
     {

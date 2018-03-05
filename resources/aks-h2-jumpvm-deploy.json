@@ -90,7 +90,7 @@
         },
         "storageProfile": {
           "imageReference": {
-            "id": "/subscriptions/', subscription().subscriptionId, '/resourceGroups/aks-labs-jumpbox-resources/providers/Microsoft.Compute/images/h2aksvm-image"
+            "id": "/subscriptions/'subscription().subscriptionId'/resourceGroups/aks-labs-jumpbox-resources/providers/Microsoft.Compute/images/h2aksvm-image"
           },
           "osDisk": {
             "createOption": "fromImage",
